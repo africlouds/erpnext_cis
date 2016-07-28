@@ -70,6 +70,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+	"Sales Invoice": {
+		"on_submit": "erpnext_cis.ebm.certify"
+	}
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
