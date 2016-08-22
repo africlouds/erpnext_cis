@@ -11,7 +11,7 @@ app_color = "grey"
 app_email = "arwema@gmail.com"
 app_license = "MIT"
 
-fixtures = ["Custom Field"]
+fixtures = ["Custom Field", "Print Format"]
 
 # Includes in <head>
 # ------------------
