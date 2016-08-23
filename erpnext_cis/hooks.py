@@ -14,7 +14,7 @@ app_license = "MIT"
 fixtures = ["Custom Field",  {
 	"doctype": "Print Format",
 	"filters":	{
-		"name": ["in", "Certified Standard"]
+		"name": ["in", ["Certified Standard", "Certified POS Invoice"]]
 	}
 }]
 
