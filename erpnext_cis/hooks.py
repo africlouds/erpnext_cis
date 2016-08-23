@@ -11,7 +11,12 @@ app_color = "grey"
 app_email = "arwema@gmail.com"
 app_license = "MIT"
 
-fixtures = ["Custom Field", "Print Format"]
+fixtures = ["Custom Field",  {
+	"doctype": "Print Format",
+	"filters":	{
+		"name": ["in", "Certified Standard"]
+	}
+}]
 
 # Includes in <head>
 # ------------------
