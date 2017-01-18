@@ -79,8 +79,13 @@ fixtures = ["Custom Field",  {
 
 doc_events = {
 	"Sales Invoice": {
-		"on_submit": "erpnext_cis.ebm.certify"
+		"on_submit": "erpnext_cis.ebm.create_certification_task"
+		#"on_submit": "erpnext_cis.ebm.certify"
+	},
+	"Certification Task":{
+		"after_insert": "erpnext_cis.ebm.send_task_notification"
 	}
+
 }
 # doc_events = {
 # 	"*": {
